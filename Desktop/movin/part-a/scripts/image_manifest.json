@@ -1,0 +1,10 @@
+[
+  {"roomId": "living_room", "roomName": "Living room", "photoId": "living_01", "image": "../../Images/Living Room/10.jpg"},
+  {"roomId": "living_room", "roomName": "Living room", "photoId": "living_02", "image": "../../Images/Living Room/1000.jpg"},
+  {"roomId": "kitchen", "roomName": "Kitchen", "photoId": "kitchen_01", "image": "../../Images/Kitchen/1.jpg"},
+  {"roomId": "kitchen", "roomName": "Kitchen", "photoId": "kitchen_02", "image": "../../Images/Kitchen/1005.jpg"},
+  {"roomId": "bedroom", "roomName": "Bedroom", "photoId": "bedroom_01", "image": "../../Images/Bedroom/0.jpg"},
+  {"roomId": "bedroom", "roomName": "Bedroom", "photoId": "bedroom_02", "image": "../../Images/Bedroom/1007.jpg"},
+  {"roomId": "dining_room", "roomName": "Dining room", "photoId": "dining_01", "image": "../../Images/Dining Room/1139.jpg"},
+  {"roomId": "dining_room", "roomName": "Dining room", "photoId": "dining_02", "image": "../../Images/Dining Room/1144.jpg"}
+]

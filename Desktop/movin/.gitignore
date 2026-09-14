@@ -1,0 +1,24 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies and build output
+**/node_modules/
+**/dist/
+**/coverage/
+**/*.tsbuildinfo
+**/__pycache__/
+**/*.pyc
+part-a/venv/
+
+# Large/local assets
+Images/
+Branding Guide/
+
+# Local/generated evaluation output
+part-a/eval_results.json
+.DS_Store

@@ -1,0 +1,12 @@
+{
+  "10.jpg": { "sofa": 1 },
+  "1000.jpg": { "sofa": 1, "armchair": 1 },
+  "1005.jpg": { "armchair": 4 }, 
+  "1006.jpg": { "armchair": 2, "coffee_table": 1 }, 
+  "1007.jpg": { "sofa": 2, "armchair": 1 },
+  "1008.jpg": { "armchair": 2, "sofa": 1, "coffee_table": 1 }, 
+  "1012.jpg": { "armchair": 2, "coffee_table": 1, "tv": 1 }, 
+  "1022.jpg": { "armchair": 3, "sofa": 1 },
+  "1025.jpg": { "armchair": 5, "sofa": 1, "double_bed": 1, "coffee_table": 2 }, 
+  "1027.jpg": { "sofa": 1, "armchair": 2 } 
+}

@@ -1,0 +1,9 @@
+{
+  "source": "Roboflow hosted inference",
+  "model": "furniture-o6003/2",
+  "version": "",
+  "endpoint": "https://serverless.roboflow.com",
+  "confidence": 0.5,
+  "photos": 8,
+  "rawResponses": "/Users/george/Desktop/movin/part-b/fixtures/roboflow_raw"
+}

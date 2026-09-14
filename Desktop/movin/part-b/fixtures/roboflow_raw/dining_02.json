@@ -1,0 +1,20 @@
+{
+  "inference_id": "24cb2820-35ce-490a-8a52-beec33197a7f",
+  "time": 0.03138842596672475,
+  "image": {
+    "width": 2250,
+    "height": 1500
+  },
+  "predictions": [
+    {
+      "x": 1950.5,
+      "y": 1010.0,
+      "width": 513.0,
+      "height": 532.0,
+      "confidence": 0.7159920334815979,
+      "class": "chair",
+      "class_id": 2,
+      "detection_id": "e4c49450-d027-4899-b7aa-85a006752bf3"
+    }
+  ]
+}

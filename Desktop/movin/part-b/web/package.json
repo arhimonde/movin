@@ -1,0 +1,8 @@
+{
+  "name": "movin-confirmation",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev": "vite", "build": "tsc -b && vite build", "test": "vitest run"},
+  "dependencies": {"@vitejs/plugin-react": "latest", "vite": "latest", "typescript": "^7.0.2", "react": "latest", "react-dom": "latest", "vitest": "^5.0.0", "jsdom": "latest", "@types/react": "latest", "@types/react-dom": "latest"},
+  "devDependencies": {}
+}

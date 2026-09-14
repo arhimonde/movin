@@ -1,0 +1,40 @@
+{
+  "inference_id": "1e32cfea-3d7e-4672-af65-e9c6459b3fc0",
+  "time": 0.022631312953308225,
+  "image": {
+    "width": 1466,
+    "height": 1955
+  },
+  "predictions": [
+    {
+      "x": 930.5,
+      "y": 1397.5,
+      "width": 349.0,
+      "height": 559.0,
+      "confidence": 0.9302987456321716,
+      "class": "chair",
+      "class_id": 2,
+      "detection_id": "ad33df98-8309-40b7-935c-491e94e5178f"
+    },
+    {
+      "x": 269.0,
+      "y": 1567.5,
+      "width": 536.0,
+      "height": 711.0,
+      "confidence": 0.8221071362495422,
+      "class": "chair",
+      "class_id": 2,
+      "detection_id": "271f50f9-3e7a-4b07-98bb-caaf264f898b"
+    },
+    {
+      "x": 1244.0,
+      "y": 957.0,
+      "width": 444.0,
+      "height": 1496.0,
+      "confidence": 0.6797491312026978,
+      "class": "bookshelf",
+      "class_id": 1,
+      "detection_id": "2bbc6dbe-cbf9-4dbd-ad48-d48e53035f55"
+    }
+  ]
+}

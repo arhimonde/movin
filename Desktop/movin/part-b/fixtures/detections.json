@@ -1,0 +1,166 @@
+{
+  "propertyId": "prop_roboflow_001",
+  "rooms": [
+    {
+      "roomId": "living_room",
+      "name": "Living room",
+      "photos": [
+        {
+          "photoId": "living_01",
+          "detections": [
+            {
+              "class": "bookshelf",
+              "confidence": 0.8169586062431335,
+              "bbox": [
+                225.0,
+                188.0,
+                1102.0,
+                1224.0
+              ],
+              "movable": true
+            }
+          ]
+        },
+        {
+          "photoId": "living_02",
+          "detections": [
+            {
+              "class": "dining_chair",
+              "confidence": 0.9302987456321716,
+              "bbox": [
+                756.0,
+                1118.0,
+                349.0,
+                559.0
+              ],
+              "movable": true
+            },
+            {
+              "class": "dining_chair",
+              "confidence": 0.8221071362495422,
+              "bbox": [
+                1.0,
+                1212.0,
+                536.0,
+                711.0
+              ],
+              "movable": true
+            },
+            {
+              "class": "bookshelf",
+              "confidence": 0.6797491312026978,
+              "bbox": [
+                1022.0,
+                209.0,
+                444.0,
+                1496.0
+              ],
+              "movable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roomId": "kitchen",
+      "name": "Kitchen",
+      "photos": [
+        {
+          "photoId": "kitchen_01",
+          "detections": []
+        },
+        {
+          "photoId": "kitchen_02",
+          "detections": [
+            {
+              "class": "dining_table",
+              "confidence": 0.6593336462974548,
+              "bbox": [
+                334.0,
+                361.0,
+                685.0,
+                405.0
+              ],
+              "movable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roomId": "bedroom",
+      "name": "Bedroom",
+      "photos": [
+        {
+          "photoId": "bedroom_01",
+          "detections": []
+        },
+        {
+          "photoId": "bedroom_02",
+          "detections": [
+            {
+              "class": "dining_chair",
+              "confidence": 0.8539526462554932,
+              "bbox": [
+                0.0,
+                619.0,
+                344.0,
+                371.0
+              ],
+              "movable": true
+            },
+            {
+              "class": "dining_chair",
+              "confidence": 0.5460118055343628,
+              "bbox": [
+                354.0,
+                708.0,
+                321.0,
+                282.0
+              ],
+              "movable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roomId": "dining_room",
+      "name": "Dining room",
+      "photos": [
+        {
+          "photoId": "dining_01",
+          "detections": [
+            {
+              "class": "bookshelf",
+              "confidence": 0.8066399097442627,
+              "bbox": [
+                821.0,
+                49.0,
+                974.0,
+                1151.0
+              ],
+              "movable": true
+            }
+          ]
+        },
+        {
+          "photoId": "dining_02",
+          "detections": [
+            {
+              "class": "dining_chair",
+              "confidence": 0.7159920334815979,
+              "bbox": [
+                1694.0,
+                744.0,
+                513.0,
+                532.0
+              ],
+              "movable": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
