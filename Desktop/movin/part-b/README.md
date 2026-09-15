@@ -19,7 +19,7 @@ cd web
 npm run dev
 ```
 
-Open the local URL shown by Vite. The screen uses the B2 fixture and supports loading, empty rooms, confidence/review flags, quantity edits, add, delete/undo, live totals, and confirmation.
+Open the local URL shown by Vite. The screen uses the B2 fixture and supports loading, empty rooms, confidence/review flags, quantity edits, add, delete/undo, live totals, and confirmation. The profile button in the header opens a Spanish profile form for `Nombre`, `Número de almacén`, and a photo from the device/camera. On first use, the profile form is mandatory before the inventory is shown. Profile data is persisted locally in the browser until a backend account service is connected. The profile panel supports multiple local users, switching, adding, and deletion with protection for the final user. Manual inventory additions can include an optional photo thumbnail; the confirmation screen offers edit, new-inventory reset, and user-switch actions.
 
 ## Run the local upload API (B1)
 
