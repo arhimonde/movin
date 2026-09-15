@@ -85,8 +85,8 @@ export function deduplicateDetections(room: Room): InventoryItem[] {
           // We take the max confidence across all detections for these objects
           confidence: Math.max(...items.map(i => i.detection.confidence)),
           movable: true,
-          needsReview: getVolume(cls) === null || clusters.length >= 6,
-          reviewReason: getVolume(cls) === null ? 'Unknown volume' : clusters.length >= 6 ? 'Unusually high quantity' : undefined
+          needsReview: getVolume(cls) === null || clusters.length >= 6 || items.some(i => i.detection.needsReview),
+          reviewReason: getVolume(cls) === null ? 'Unknown volume' : clusters.length >= 6 ? 'Unusually high quantity' : items.some(i => i.detection.needsReview) ? 'Detection confidence or mapping needs review' : undefined
         });
       }
     } else {

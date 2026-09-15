@@ -13,7 +13,7 @@ python3 part-a/scripts/fetch_roboflow.py
 
 Când apare `Roboflow API key (input hidden):`, lipește cheia și apasă Enter.
 
-Cheia API nu este scrisă în repository. Modelul public și versiunea folosite sunt trecute în metadata generată de script (`fixtures/roboflow_raw/metadata.json`). Conversia bbox folosește formatul Roboflow centrat (`x`, `y`, `width`, `height`) și îl transformă în `[left, top, width, height]`. Clasele sunt mapate către tabela de volume; clasele necunoscute rămân în inventar cu volum `null`, iar clasele imobile primesc `movable: false`.
+Cheia API nu este scrisă în repository. Modelul public și versiunea folosite sunt trecute în metadata generată de script (`fixtures/roboflow_raw/metadata.json`). Conversia bbox folosește formatul Roboflow centrat (`x`, `y`, `width`, `height`) și îl transformă în `[left, top, width, height]`. Clasele sunt mapate către tabela de volume; maparea are versiune (`classMapVersion`) și detecțiile păstrează `originalClass`, `sourceDetectionId` și motivele de review. Clasele necunoscute rămân în inventar cu volum `null`, iar clasele imobile primesc `movable: false`. Detecțiile sub 0.6 sunt marcate pentru review chiar dacă pragul de acceptare rămâne 0.5.
 
 ## Ce am implementat
 Am implementat un modul TypeScript (fără framework-uri externe) care parcurge output-ul JSON brut (cu bbox-uri), aplică filtre și calculează un inventar cu cantități agregate. Am creat:

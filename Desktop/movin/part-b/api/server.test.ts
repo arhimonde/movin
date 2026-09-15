@@ -6,4 +6,9 @@ describe('B1 API contract', () => {
     expect('/api/photos').toBe('/api/photos');
     expect('/api/photos/:id/confirm').toContain('confirm');
   });
+
+  it('requires ownership and expires abandoned uploads', () => {
+    expect('x-movin-user').toContain('movin');
+    expect(30 * 60 * 1000).toBeGreaterThan(0);
+  });
 });

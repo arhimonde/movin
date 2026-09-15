@@ -24,6 +24,7 @@ DEFAULT_ENDPOINT = "https://serverless.roboflow.com"
 DEFAULT_MODEL = "furniture-o6003/2"
 DEFAULT_VERSION = ""
 DEFAULT_CONFIDENCE = 0.5
+CLASS_MAP_VERSION = "2026-09-15-1"
 
 # Adjust this map when the selected Universe model uses different labels.
 CLASS_MAP = {
@@ -97,9 +98,14 @@ def normalize_prediction(prediction: Mapping[str, Any]) -> Dict[str, Any]:
     mapped = map_class(label)
     return {
         "class": mapped,
+        "originalClass": label,
+        "mappingVersion": CLASS_MAP_VERSION,
         "confidence": confidence_value,
         "bbox": roboflow_bbox_to_xywh(prediction),
         "movable": mapped not in IMMOVABLE_CLASSES,
+        "sourceDetectionId": prediction.get("detection_id"),
+        "needsReview": confidence_value < 0.6 or mapped not in CLASS_MAP.values(),
+        "reviewReason": "near_confidence_threshold" if confidence_value < 0.6 else ("unknown_class_mapping" if mapped not in CLASS_MAP.values() else None),
     }
 
 
@@ -139,6 +145,7 @@ def build_fixture(property_id: str, manifest: Iterable[Mapping[str, Any]], respo
         room["photos"].append({
             "photoId": str(item["photoId"]),
             "detections": normalize_response(responses[str(item["photoId"])]),
+            "sourceImage": str(item["image"]),
         })
     return {"propertyId": property_id, "rooms": list(rooms.values())}
 
@@ -224,6 +231,8 @@ def main() -> None:
         "confidence": args.confidence,
         "photos": len(manifest),
         "rawResponses": str(args.raw_dir),
+        "classMapVersion": CLASS_MAP_VERSION,
+        "generatedAt": time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
     }
     (args.raw_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote normalized fixture: {args.output}")

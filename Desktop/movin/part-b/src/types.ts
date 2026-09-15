@@ -10,6 +10,11 @@ export interface Detection {
   confidence: number;
   bbox?: BoundingBox;
   movable?: boolean; // defaults to true if missing in real models, but explicit in our mock
+  originalClass?: string;
+  mappingVersion?: string;
+  sourceDetectionId?: string | null;
+  needsReview?: boolean;
+  reviewReason?: string | null;
 }
 
 export interface Photo {
